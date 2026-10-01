@@ -1,6 +1,6 @@
 // BUGGY CODE: Number Palindrome Checker
 // Issue: Always outputs "NOT a Palindrome" for valid inputs. Fix the logic!
-//  Always printing "is NOT a Palindrome."
+
 #include <stdio.h>
 #include <stdbool.h>
 
