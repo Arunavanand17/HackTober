@@ -1,13 +1,12 @@
 // BUGGY CODE: Prime Number Checker
 // Issue: This program marks every number as "Not Prime". Find and fix the bug!
 
-#include <iostream>
-using namespace std;
+#include <stdio.h>
+#include <stdbool.h>
 
 bool isPrime(int n) {
     if (n <= 1) return false;
     
-    // BUG IS HERE: Check loop starting condition
     for (int i = 1; i * i <= n; i++) {
         if (n % i == 0) return false;
     }
@@ -17,9 +16,9 @@ bool isPrime(int n) {
 int main() {
     int num = 7;
     if (isPrime(num)) {
-        cout << num << " is a Prime number." << endl;
+        printf("%d is a Prime number.\n", num);
     } else {
-        cout << num << " is NOT a Prime number." << endl;
+        printf("%d is NOT a Prime number.\n", num);
     }
     return 0;
 }
