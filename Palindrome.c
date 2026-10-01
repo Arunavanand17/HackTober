@@ -5,6 +5,11 @@
 #include <stdbool.h>
 
 bool isPalindrome(int num) {
+    // Negative numbers are not palindromes (e.g., -121 reversed is 121-)
+    if (num < 0) {
+        return false;
+    }
+
     int originalNum = num;
     int reversedNum = 0;
     
@@ -14,8 +19,8 @@ bool isPalindrome(int num) {
         num /= 10;
     }
     
-    /
-    return num == reversedNum;
+    // Compare the reversed number with the original, not the modified num
+    return originalNum == reversedNum;
 }
 
 int main() {

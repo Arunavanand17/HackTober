@@ -1,22 +1,23 @@
 // Issue: Program running in a Infinte Loop;
 
-public class BinarySearchBuggy {
+public class Binary_Search {
 
     public static int binarySearch(int[] arr, int target) {
         int low = 0;
         int high = arr.length - 1;
 
         while (low <= high) {
-            int mid = (low + high) / 2;
+            
+            int mid = low + (high - low) / 2;
 
             if (arr[mid] == target) {
                 return mid;
             }
 
             if (arr[mid] < target) {
-                low = mid; 
+                low = mid + 1; 
             } else {
-                high = mid - 1;
+                high = mid - 1; 
             }
         }
 

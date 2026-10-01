@@ -7,7 +7,8 @@
 bool isPrime(int n) {
     if (n <= 1) return false;
     
-    for (int i = 1; i * i <= n; i++) {
+    // Start checking divisors from 2 instead of 1
+    for (int i = 2; i * i <= n; i++) {
         if (n % i == 0) return false;
     }
     return true;
