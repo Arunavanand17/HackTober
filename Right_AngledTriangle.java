@@ -1,5 +1,5 @@
 // BUGGY CODE: Half Pyramid Star Pattern
-// Issue: Prints all stars on a single line instead of a triangular pattern. Fix line breaks!
+// Issue: Prints all stars on a single line instead of a triangular pattern. 
 
 public class BuggyPattern {
     public static void printPattern(int rows) {
